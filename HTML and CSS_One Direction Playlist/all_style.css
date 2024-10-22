@@ -1,0 +1,2825 @@
+body{
+    width: 1490px;
+    height: 690px;
+}
+.head, .head2, .head3, .head4, .head5{
+    position: relative;
+    align-items: center;
+}
+.bg, .bg2, .bg3, .bg4, .bg5{
+    position: relative;
+    width: 1490px;
+    height: 690px;
+    border-radius: 40px;
+    border: 12px solid rgb(47, 37, 37);
+    overflow: hidden; 
+}
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/1d_home.jpg');
+    background-size: cover;
+    filter: blur(2.5px);
+    z-index: 0;
+}
+.bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+}
+.head5 .bg5 li, .head4 .bg4 li, .head3 .bg3 li, .head2 .bg2 li, .head .bg li{
+    position: relative;
+    justify-content: space-around;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: Oswald;
+    z-index: 2;
+    margin: 20px 40px 0px 40px;
+    padding: 0px 5px;
+    left: 295px;
+}
+.head5 .bg5 li:after, .head4 .bg4 li:after, .head3 .bg3 li:after, .head2 .bg2 li:after, .head .bg li:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s;
+}
+.head5 .bg5 li:hover, .head4 .bg4 li:hover, .head3 .bg3 li:hover, .head2 .bg2 li:hover, .head .bg li:hover{
+    color:rgb(255, 255, 255);
+}
+.head5 .bg5 li:hover:after, .head4 .bg4 li:hover:after, .head3 .bg3 li:hover:after, .head2 .bg2 li:hover:after, .head .bg li:hover:after{
+    width: 100%;
+}
+.head .bg h1{
+    line-height: 140px;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 150px;
+    color: white;
+    position: relative;
+    font-family: Shrikhand;
+    z-index: 2;
+    text-shadow: 7px 5px 2px rgb(24, 14, 14);
+    animation: one 3s linear infinite;
+}
+@keyframes one{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    25%{
+        color:rgb(220, 220, 220);
+    }
+    50%{
+        color: rgb(212, 212, 212);
+    }
+    75%{
+        color:rgb(220, 220, 220);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+.head4 .bg4 i, .head3 .bg3 i, .head2 .bg2 i, .head .bg i{
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 50px;
+    display: inline;
+    margin-left: 30px;
+    margin-top: 90px;
+    margin-bottom: -30px;
+    top: 20px;
+    transition: 0.4s;
+}
+
+.head .bg #fb:hover{
+    color: rgb(61, 51, 244);
+}
+.head .bg #yt:hover{
+    color: red;
+}
+.head .bg #sp:hover{
+    color: rgb(78, 205, 78);
+}
+
+
+/* About Section */
+
+.bg2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+}
+.head2 .bg2 img{
+    position: absolute;
+    height: 1480px;
+    width: 720px;
+    margin-top: -770px;
+    top: -10px;
+    margin-left: 760px;
+}
+.head2 .bg2 h3{
+    position: absolute;
+    color: rgb(254, 245, 245);
+    font-family: 'Shrikhand';
+    margin-top: 10px;
+    margin-left: 160px;
+    font-size: 55px;
+    text-shadow: 6px 3px 2px rgb(124, 124, 124);
+}
+.head2 .bg2 p{
+    margin-top: 55px;
+    margin-left: 40px;
+    position: absolute;
+    color: rgb(175, 175, 175);
+    font-family: 'Comic Sans Ms';
+    font-size: 17.5px;
+    line-height: 31px;
+}
+
+/* Songs Section */
+
+.bg3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(78, 77, 77);
+    z-index: 0;
+}
+.bg3{
+    height: 6100px;
+}
+
+.head3 .bg3 #bor{
+    margin-left: -10px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+} 
+.head3 .bg3 #al{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    margin-top: 90px;
+    margin-left: -380px;
+}
+.head3 .bg3 #cd{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    width: 350px;
+    margin-top: 90px;
+    margin-left: -210px;
+    z-index: 2;
+    animation: circle 4s linear infinite;
+    box-shadow: 3px 6px 3px white;
+    border-radius: 340px;
+}
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+audio{
+    position:absolute;
+    margin-left: -349px;
+    margin-top: 470px;
+    width: 270px;
+    border-radius: 35px;
+    border: 6px solid rgb(69, 42, 42); /* Border with proper thickness */
+    box-shadow: 4px 4px 3px black;
+    z-index: 2;
+}
+.head3 .bg3 .a1{
+    position: relative;
+    background-color: rgb(155, 155, 155);
+    z-index: 3;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+    left: 150px;
+    bottom: 140px;
+}
+.head3 .bg3 .a1 img, .head3 .bg3 .a1Line2 img, .head3 .bg3 .albumLine3 img, .head3 .bg3 .albumLine32 img, .head3 .bg3 .albumLine321 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .a1 h2, .head3 .bg3 .a1Line2 h2, .head3 .bg3 .albumLine3 h2, .head3 .bg3 .albumLine32 h2, .head3 .bg3 .albumLine321 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .a1 #aud, .head3 .bg3 .a1Line2 #aud, .head3 .bg3 .albumLine3 #aud, .head3 .bg3 .albumLine32 #aud, .head3 .bg3 .albumLine321 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .a1 #gotta{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 54px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .a1 #one{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 70px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .a1Line2{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 5;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -118px 10px 0px 10px;
+    left: 644px;
+}
+.head3 .bg3 .a1Line2 #more{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 41px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .a1Line2 #all{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 56px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .a1Line2 #I{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 53px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albumLine3{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px -820px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albumLine3 #lie{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 55px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albumLine32{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albumLine32 #taken{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 89px;
+    text-align: center;
+    z-index: 8;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albumLine321{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albumLine321 #want{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 90px;
+    text-align: center;
+    z-index: 8;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 aside .aside{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .aside2{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .aside3{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .aside4{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .aside img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .aside h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    line-height: 25px;
+    margin: 190px 0px 0px 35px;
+    text-align: center;
+}
+.head3 .bg3 aside .aside #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .aside2 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .aside2 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-family: Zain;
+    font-size: 26px;
+    margin: 195px 0px 0px 30px;
+    text-align: center;
+}
+.head3 .bg3 aside .aside2 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .aside3 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .aside3 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    line-height: 24px;
+    font-family: Zain;
+    margin: 187px 0px 0px 35px;
+    text-align: center;
+}
+.head3 .bg3 aside .aside3 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .aside4 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .aside4 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    margin: 195px 0px 0px 30px;
+    text-align: center;
+}
+.head3 .bg3 aside .aside4 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 #line{
+    position: relative;
+    z-index: 10;
+    width: 1480px;
+    height: 130px;
+    margin: 350px 0px 0px 20px;
+}
+.head3 .bg3 #bor2{
+    margin-left: -10px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+} 
+.head3 .bg3 #al2{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: -380px;
+}
+.head3 .bg3 #cd2{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: -210px;
+    z-index: 2;
+    animation: circle 4s linear infinite;
+    box-shadow: 3px 6px 3px white;
+    border-radius: 340px;
+}
+.head3 .bg3 .album2{
+    position: relative;
+    background-color: rgb(155, 155, 155);
+    z-index: 3;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+    left: 150px;
+    bottom: 140px;
+}
+.head3 .bg3 .album2 img, .head3 .bg3 .albums2 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .album2 h2, .head3 .bg3 .albums2 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .album2 #aud, .head3 .bg3 .albums2 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .album2 #kiss{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 80px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .album2 #things{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 56px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums2{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 5;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -118px 10px 0px 10px;
+    left: 644px;
+}
+.head3 .bg3 .albums2 #cmon{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 50px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums2 #last{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 53px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums2 #attack{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 56px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums22{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px -820px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums22 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums22 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums22 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums22 #rock{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 75px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums23{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums23 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums23 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums23 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums23 #mind{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 35px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums234{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums234 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums234 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums234 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums234 #would{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 83px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 aside .asides{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asides2{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asides3{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asides4{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asides img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asides h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    line-height: 25px;
+    margin: 200px 0px 0px 33px;
+    text-align: center;
+}
+.head3 .bg3 aside .asides #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asides2 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asides2 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-family: Zain;
+    font-size: 26px;
+    margin: 195px 0px 0px 33px;
+    text-align: center;
+}
+.head3 .bg3 aside .asides2 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asides3 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asides3 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    line-height: 24px;
+    font-family: Zain;
+    margin: 187px 0px 0px 35px;
+    text-align: center;
+}
+.head3 .bg3 aside .asides3 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asides4 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asides4 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    margin: 195px 0px 0px 30px;
+    text-align: center;
+}
+.head3 .bg3 aside .asides4 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 #line2{
+    position: relative;
+    z-index: 10;
+    width: 1480px;
+    height: 130px;
+    margin: 350px 0px 0px 20px;
+}
+.head3 .bg3 #bor3{
+    margin-left: -10px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+} 
+.head3 .bg3 #al3{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: -380px;
+}
+.head3 .bg3 #cd3{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: -210px;
+    z-index: 2;
+    animation: circle 4s linear infinite;
+    box-shadow: 3px 6px 3px white;
+    border-radius: 340px;
+}
+.head3 .bg3 .albums3{
+    position: relative;
+    background-color: rgb(155, 155, 155);
+    z-index: 3;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+    left: 150px;
+    bottom: 140px;
+}
+.head3 .bg3 .albums3 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums3 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums3 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums3 #best{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 42px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums3 #life{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 42px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums3 #diana{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 83px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums33{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 5;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -118px 10px 0px 10px;
+    left: 644px;
+}
+.head3 .bg3 .albums33 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums33 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums33 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums33 #midnight{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 225px 0px 0px 72px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums33 #youni{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 83px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums33 #belong{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 227px 0px 0px 28px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums333{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px -820px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums333 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums333 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 84px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums333 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums334{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums334 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums334 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 79px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums334 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums335{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums335 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums335 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 69px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums335 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 aside .asidess{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidess2{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidess3{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidess4{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidess img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidess h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    line-height: 25px;
+    margin: 190px 0px 0px 33px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidess #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidess2 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidess2 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-family: Zain;
+    font-size: 26px;
+    line-height: 28px;
+    margin: 185px 0px 0px 33px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidess2 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidess3 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidess3 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    line-height: 24px;
+    font-family: Zain;
+    margin: 187px 0px 0px 35px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidess3 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidess4 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidess4 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    line-height: 23px;
+    margin: 190px 0px 0px 30px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidess4 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 .extra{
+    position: relative;
+    background-color: rgb(155, 155, 155);
+    z-index: 3;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 510px 10px 0px 0px;
+    left: 60px;
+    bottom: 140px;
+}
+.head3 .bg3 .extra img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .extra h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 59px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .extra #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 #line3{
+    position: relative;
+    z-index: 10;
+    width: 1480px;
+    height: 130px;
+    margin: -970px 0px 0px 20px;
+}
+.head3 .bg3 #bor4{
+    margin-left: -10px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+} 
+.head3 .bg3 #al4{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: -380px;
+}
+.head3 .bg3 #cd4{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: -210px;
+    z-index: 2;
+    animation: circle 4s linear infinite;
+    box-shadow: 3px 6px 3px white;
+    border-radius: 340px;
+}
+.head3 .bg3 .albums4{
+    position: relative;
+    background-color: rgb(155, 155, 155);
+    z-index: 3;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+    left: 150px;
+    bottom: 140px;
+}
+.head3 .bg3 .albums4 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums4 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums4 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums4 #girl{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 57px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums4 #run{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 57px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums44{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 5;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -118px 10px 0px 10px;
+    left: 644px;
+}
+.head3 .bg3 .albums44 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums44 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums44 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums44 #eight{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 110px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums44 #almighty{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 77px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums44 #gold{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 64px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums444{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px -820px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums444 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums444 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 48px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums444 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums445{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums445 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums445 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 68px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums445 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums446{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums446 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums446 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 76px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums446 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 aside .asidesss{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidesss2{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidesss3{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidesss4{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidesss img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidesss h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    line-height: 25px;
+    margin: 198px 0px 0px 33px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidesss #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidesss2 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidesss2 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-family: Zain;
+    font-size: 26px;
+    line-height: 24px;
+    margin: 185px 0px 0px 33px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidesss2 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidesss3 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidesss3 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    line-height: 24px;
+    font-family: Zain;
+    margin: 197px 0px 0px 35px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidesss3 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 #line4{
+    position: relative;
+    z-index: 10;
+    width: 1480px;
+    height: 130px;
+    margin: 350px 0px 0px 20px;
+}
+.head3 .bg3 #bor5{
+    margin-left: -10px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+} 
+.head3 .bg3 #al5{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: -380px;
+}
+.head3 .bg3 #cd5{
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: -210px;
+    z-index: 2;
+    animation: circle 4s linear infinite;
+    box-shadow: 3px 6px 3px white;
+    border-radius: 340px;
+}
+.head3 .bg3 .albums5{
+    position: relative;
+    background-color: rgb(155, 155, 155);
+    z-index: 3;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+    left: 150px;
+    bottom: 140px;
+}
+.head3 .bg3 .albums5 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums5 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums5 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums5 #angel{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 69px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums5 #drag{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 79px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums5 #per{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 85px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums55{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 5;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -118px 10px 0px 10px;
+    left: 644px;
+}
+.head3 .bg3 .albums55 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums55 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 230px 0px 0px 34px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums55 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums55 #infinity{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 85px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums55 #end{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 45px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums55 #fly{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 55px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums555{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px -820px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums555 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums555 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 33px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums555 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums556{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums556 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums556 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 51px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums556 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 .albums557{
+    position: relative;
+    background-color: rgb(135, 135, 135);
+    z-index: 6;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+    display: inline-block;
+    justify-content: space-around;
+    margin: -618px 10px 0px 10px;
+    left: 644px;
+    top: 340px;
+}
+.head3 .bg3 .albums557 img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0px 0px 33px;
+    z-index: 4;
+}
+.head3 .bg3 .albums557 h2{
+    position: absolute;
+    font-size: 29px;
+    line-height: 27px;
+    display: inline;
+    margin: 240px 0px 0px 89px;
+    text-align: center;
+    z-index: 4;
+    color: rgb(9, 9, 9);
+    font-family: Zain;
+}
+.head3 .bg3 .albums557 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 5;
+    display: inline;
+    margin: 170px 0px 0px 194px;
+}
+.head3 .bg3 aside .asidessss{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidessss2{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: -200px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidessss3{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 30px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidessss4{
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 10px;
+    display: inline-block;
+    left: 30px;
+    margin: 86px 0px 0px 310px;
+    border: 7px solid rgb(47, 47, 47);
+    box-shadow: 5px 7px 3px black;
+}
+.head3 .bg3 aside .asidessss img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidessss h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    line-height: 25px;
+    margin: 198px 0px 0px 30px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidessss #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidessss2 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidessss2 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-family: Zain;
+    font-size: 26px;
+    line-height: 24px;
+    margin: 185px 0px 0px 33px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidessss2 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidessss3 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidessss3 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    line-height: 24px;
+    font-family: Zain;
+    margin: 187px 0px 0px 35px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidessss3 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidessss3 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+.head3 .bg3 aside .asidessss4 img{
+    z-index: 7;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 20px 0px 0px 34px;
+}
+.head3 .bg3 aside .asidessss4 h2{
+    z-index: 3;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: inline;
+    font-size: 26px;
+    font-family: Zain;
+    margin: 190px 0px 0px 35px;
+    text-align: center;
+}
+.head3 .bg3 aside .asidessss4 #aud{
+    position: absolute;
+    width: 20px;
+    border-radius: 170px 170px 170px 170px;
+    z-index: 9;
+    display: inline;
+    margin: 145px 0px 0px 180px;
+}
+
+/* Band Members Section */
+
+.bg4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(79, 78, 78);
+    z-index: 0;
+}
+.bg4{
+    height: 2600px;
+}
+.head4 .bg4 .artist1 .container1{
+    position: relative;
+    background-color: rgb(146, 142, 142);
+    box-shadow: 5px 5px 3px rgb(149, 148, 148);
+    border: 8px solid rgb(49, 44, 44);
+    border-radius: 950px;
+    width: 380px;
+    height: 380px;
+    z-index: 11;
+    margin: 90px 0px 0px 80px;
+    overflow: hidden;
+    img{
+        position: relative;
+        width: 390px;
+        height: 415px;
+        margin: 20px 0px 0px -10px;
+        z-index:10;
+    }
+}
+.head4 .bg4 .artist1 p{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: 'Zain';
+    z-index: 10;
+    margin: -350px 0px 0px 550px;
+}
+.head4 .bg4 .artist2 .container2{
+    align-items: right;
+    position: relative;
+    background-color: rgb(146, 142, 142);
+    box-shadow: 5px 5px 3px rgb(149, 148, 148);
+    border: 8px solid rgb(49, 44, 44);
+    border-radius: 950px;
+    width: 380px;
+    height: 380px;
+    z-index: 11;
+    margin: 90px 0px 0px 1000px;
+    overflow: hidden;
+    img{
+        position: relative;
+        width: 390px;
+        height: 415px;
+        margin: 20px 0px 0px -10px;
+        z-index:10;
+    }
+}
+.head4 .bg4 .artist2 p{
+    display: inline;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: 'Zain';
+    z-index: 10;
+    margin: -330px 0px 0px 100px;
+}
+#lane{
+    position: absolute;
+    z-index: 13;
+    width: 950px;
+    height: 120px;
+    margin: 29px 0px 0px 80px;
+}
+.head4 .bg4 .artist3 .container3{
+    position: relative;
+    background-color: rgb(146, 142, 142);
+    box-shadow: 5px 5px 3px rgb(149, 148, 148);
+    border: 8px solid rgb(49, 44, 44);
+    border-radius: 950px;
+    width: 380px;
+    height: 380px;
+    z-index: 11;
+    margin: 91px 0px 0px 80px;
+    overflow: hidden;
+    img{
+        position: relative;
+        width: 340px;
+        height: 415px;
+        margin: 20px 0px 0px 5px;
+        z-index:10;
+    }
+}
+.head4 .bg4 .artist3 p{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: 'Zain';
+    z-index: 10;
+    margin: -349px 0px 0px 550px;
+}
+#lane2{
+    position: absolute;
+    z-index: 13;
+    width: 990px;
+    height: 120px;
+    margin: 10px 0px 0px 430px;
+}
+.head4 .bg4 .artist4 .container4{
+    align-items: right;
+    position: relative;
+    background-color: rgb(146, 142, 142);
+    box-shadow: 5px 5px 3px rgb(149, 148, 148);
+    border: 8px solid rgb(49, 44, 44);
+    border-radius: 950px;
+    width: 380px;
+    height: 380px;
+    z-index: 11;
+    margin: 90px 0px 0px 1000px;
+    overflow: hidden;
+    img{
+        position: relative;
+        width: 350px;
+        height: 415px;
+        margin: 20px 0px 0px 25px;
+        z-index:10;
+    }
+}
+.head4 .bg4 .artist4 p{
+    display: inline;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: 'Zain';
+    z-index: 10;
+    margin: -340px 0px 0px 100px;
+}
+#lane3{
+    position: absolute;
+    z-index: 13;
+    width: 950px;
+    height: 120px;
+    margin: 29px 0px 0px 80px;
+}
+.head4 .bg4 .artist5 .container5{
+    position: relative;
+    background-color: rgb(146, 142, 142);
+    box-shadow: 5px 5px 3px rgb(149, 148, 148);
+    border: 8px solid rgb(49, 44, 44);
+    border-radius: 950px;
+    width: 380px;
+    height: 380px;
+    z-index: 11;
+    margin: 91px 0px 0px 80px;
+    overflow: hidden;
+    img{
+        position: relative;
+        width: 400px;
+        height: 415px;
+        margin: 20px 0px 0px -15px;
+        z-index:10;
+        transform:rotate(5deg);
+    }
+}
+.head4 .bg4 .artist5 p{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: 'Zain';
+    z-index: 10;
+    margin: -339px 0px 0px 550px;
+}
+#lane4{
+    position: absolute;
+    z-index: 13;
+    width: 990px;
+    height: 120px;
+    margin: 10px 0px 0px 430px;
+}
+
+/* Gallery Section */
+
+.bg5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(72, 53, 53);
+    z-index: 0;
+}
+.bg5{
+    height: 4750px;
+}
+.head5 .bg5 .container_imag{
+    position: relative;
+
+    #img1{
+        position: absolute;
+        width: 650px;
+        height: 430px;
+        margin: 30px 0px 0px 60px;
+    }
+    #img2{
+        position: absolute;
+        width: 380px;
+        height: 290px;
+        margin: 30px 0px 0px 720px;
+    }
+    #img3{
+        position: absolute;
+        width: 380px;
+        height: 130px;
+        margin: 330px 0px 0px 720px;
+    }
+    #img4{
+        position: absolute;
+        width: 320px;
+        height: 430px;
+        margin: 30px 0px 0px 1110px;
+    }
+    #img5{
+        position: absolute;
+        width: 490px;
+        height: 400px;
+        margin: 475px 0px 0px 60px;
+    }
+    #img6{
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        margin: 475px 0px 0px 565px;
+    }
+    #img7{
+        position: absolute;
+        width: 350px;
+        height: 320px;
+        margin: 475px 0px 0px 1078px;
+    }
+    #img8{
+        position: absolute;
+        width: 490px;
+        height: 390px;
+        margin: 890px 0px 0px 60px;
+    }
+    #img9{
+        position: absolute;
+        width: 500px;
+        height: 292px;
+        margin: 990px 0px 0px 565px;
+    }
+    #img10{
+        position: absolute;
+        width: 350px;
+        height: 278px;
+        margin: 1005px 0px 0px 1078px;
+    }
+    #img11{
+        position: absolute;
+        width: 570px;
+        height: 350px;
+        margin: 1298px 0px 0px 60px;
+    }
+    #img12{
+        position: absolute;
+        width: 430px;
+        height: 350px;
+        margin: 1298px 0px 0px 644px;
+    }
+    #img13{
+        position: absolute;
+        width: 350px;
+        height: 180px;
+        margin: 810px 0px 0px 1078px;
+    }
+    #img14{
+        position: absolute;
+        width: 340px;
+        height: 720px;
+        margin: 1298px 0px 0px 1087px;
+    }
+    #img15{
+        position: absolute;
+        width: 340px;
+        height: 720px;
+        margin: 1664px 0px 0px 60px;
+    }
+    #img16{
+        position: absolute;
+        width: 655px;
+        height: 650px;
+        margin: 1665px 0px 0px 417px;
+    }
+    #img17{
+        position: absolute;
+        width: 344px;
+        height: 340px;
+        margin: 2033px 0px 0px 1084px;
+    }
+    #img18{
+        position: absolute;
+        width: 654px;
+        height: 390px;
+        margin: 2333px 0px 0px 418px;
+    }
+    #img19{
+        position: absolute;
+        width: 344px;
+        height: 220px;
+        margin: 2396px 0px 0px 60px;
+    }
+    #img20{
+        position: absolute;
+        width: 344px;
+        height: 336px;
+        margin: 2386px 0px 0px 1084px;
+    }
+    #img21{
+        position: absolute;
+        width: 344px;
+        height: 336px;
+        margin: 2630px 0px 0px 60px;
+    }
+    #img22{
+        position: absolute;
+        width: 504px;
+        height: 320px;
+        margin: 2740px 0px 0px 420px;
+    }
+    #img23{
+        position: absolute;
+        width: 250px;
+        height: 410px;
+        margin: 2740px 0px 0px 938px;
+    }
+    #img24{
+        position: absolute;
+        width: 225px;
+        height: 410px;
+        margin: 2740px 0px 0px 1203px;
+    }
+    #img25{
+        position: absolute;
+        width: 345px;
+        height: 270px;
+        margin: 2980px 0px 0px 60px;
+    }
+    #img26{
+        position: absolute;
+        width: 487px;
+        height: 490px;
+        margin: 3165px 0px 0px 940px;
+    }
+    #img27{
+        position: absolute;
+        width: 502px;
+        height: 350px;
+        margin: 3075px 0px 0px 420px;
+    }
+    #img28{
+        position: absolute;
+        width: 502px;
+        height: 590px;
+        margin: 3440px 0px 0px 420px;
+    }
+    #img29{
+        position: absolute;
+        width: 345px;
+        height: 340px;
+        margin: 3267px 0px 0px 60px;
+    }
+    #img30{
+        position: absolute;
+        width: 345px;
+        height: 540px;
+        margin: 3627px 0px 0px 60px;
+    }
+    #img31{
+        position: absolute;
+        width: 490px;
+        height: 400px;
+        margin: 3670px 0px 0px 937px;
+    }
+    #img32{
+        position: absolute;
+        width: 505px;
+        height: 200px;
+        margin: 4046px 0px 0px 417px;
+    }
+    #img33{
+        position: absolute;
+        width: 345px;
+        height: 400px;
+        margin: 4180px 0px 0px 60px;
+    }
+    #img34{
+        position: absolute;
+        width: 220px;
+        height: 315px;
+        margin: 4263px 0px 0px 418px;
+    }
+    #img35{
+        position: absolute;
+        width: 490px;
+        height: 167px;
+        margin: 4083px 0px 0px 937px;
+    }
+    #img36{
+        position: absolute;
+        width: 490px;
+        height: 315px;
+        margin: 4263px 0px 0px 652px;
+    }
+    #img37{
+        position: absolute;
+        width: 272px;
+        height: 315px;
+        margin: 4263px 0px 0px 1154px;
+    }
+}
+

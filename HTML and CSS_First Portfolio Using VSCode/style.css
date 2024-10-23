@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pontano+Sans:wght@300..700&family=Shrikhand&family=Tilt+Warp&family=Zain:wght@200;300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Lilita+One&family=Noto+Kufi+Arabic:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pontano+Sans:wght@300..700&family=Shrikhand&family=Tilt+Warp&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+body{
+    background-color: rgb(59, 41, 32);
+    width: 1473px;
+    height: 2400px;
+
+}
+header nav{
+
+    margin: -20px 0px 0px -8px;
+    width: 1518px;
+    height: 80px;
+    background-color: rgb(103, 78, 38);
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+
+}
+header nav #navbar{
+    position: relative;
+    color: white;
+    width: 1473px;
+    height: 800px;
+    overflow: hidden;
+    h2{
+        position: absolute;
+        margin: 29px 0px 0px 30px;
+        font-size: 30px;
+    }
+    ul{
+        position: absolute;
+        left: 1020px;
+        margin-left: 40px;
+        .enum{      
+            list-style-type: none;
+            display: inline-block;
+            padding: 0px 13px 0px 13px;
+            margin: 20px 10px 0px 0px;
+            font-size: 18px;
+            transition: 0.3s;
+            color: white;
+        }
+        .enum:hover{
+            color: rgb(216, 165, 135);
+        }
+    }
+
+}
+main {
+    position: absolute;
+    width: 1518px;
+    background-color: rgb(59, 41, 32);
+    z-index: 5;
+    margin: 60px 0px 0px -8px;
+}
+#imgContainer #mainContainer {
+    position: relative;
+    margin: 100px 0px 0px 990px;
+    box-shadow: 10px 10px 3px rgb(105, 83, 61),
+                -10px -10px 3px rgb(136, 79, 45),
+                10px -10px 3px rgb(190, 118, 108),
+                -10px 10px 3px rgb(190, 118, 108);
+    border: 13px solid rgb(71, 47, 13);
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+    border-radius: 300px;
+    animation: circle 1s linear infinite;
+}
+@keyframes circle{
+    0%, 100%{ transform: scale(1)}
+    50%{ transform: scale(1.01) }
+}
+#imgContainer #mainContainer img {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 300px;
+}
+#prelimHeading {
+    width: 1420px;
+    height: 500px;
+    position: absolute;
+    margin: -330px 0px 0px 80px;
+    font-family: 'Tilt Warp';
+    line-height: 13px;
+}
+#prelimHeading #greetings, #prelimHeading #animated {
+    display: inline;
+    font-size: 50px;
+    color: rgb(251, 228, 216);
+}
+#prelimHeading #animated {
+    animation: colorSwitch 2s linear infinite;
+    text-shadow: 5px 3px 4px rgb(42, 21, 7);
+
+}
+@keyframes colorSwitch {
+    0%, 100% {
+        color: rgb(255, 254, 253);
+    }
+    25%, 75%{
+        color: rgb(228, 187, 187);
+    }
+    50% {
+        color: rgb(208, 135, 112);
+    }
+}
+#prelimHeading h2 {
+    margin-top: 45px;
+    font-size: 75px;
+    color: rgb(216, 127, 63);
+    text-shadow: 5px 4px 4px rgb(111, 79, 34);
+}
+#prelimHeading #description{
+    color: rgb(244, 222, 222);
+    font-family: 'Comic Sans Ms';
+    font-size: 23px;
+    line-height: 30px;
+}
+#project_container{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        margin: 2000px 0px 0px 0px;
+    }
+main #separator{
+    position: absolute;
+    width: 1400px;
+    margin: 80px 0px 0px 55px;
+}
+main #project_container{
+    color: white;
+    margin: 140px 0px 0px 100px;
+}
+main #project_container h4{
+    width: 1300px;
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Noto Kufi Arabic';
+    margin: 10px 0px 0px 0px;
+}
+main #project_container {
+    margin: 140px 0px 0px 100px;
+    color: white;
+    z-index: 10;
+}
+
+main #project_container .projects {
+    display: inline-block;
+    justify-content: space-around;
+    margin: 60px 0px 0px -20px;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(104, 85, 48);
+    border: 5px solid rgb(81, 49, 49);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 6px 5px 3px rgb(182, 139, 108);
+    position: relative; 
+    z-index: 10; 
+}
+main #project_container .projects #img1{
+    position: absolute;
+    margin: 20px 0px 0px 26px;
+    height: 200px;
+    width: 350px; 
+    z-index: 5; 
+}
+#viewButton{
+
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(228, 150, 108);
+    border: 5px solid rgb(66, 42, 33);
+    font-size: 22px;
+    text-decoration: none;
+    margin: 1125px 0px 0px 100px;
+    border-radius: 30px;
+    padding: 4px 22px 4px 22px;
+    font-family: 'Tilt Warp';
+    color: rgb(59, 32, 28);
+    transition: 0.3s;
+}
+main #project_container .projects #coffee{
+    position: absolute;
+    margin: 243px 0px 0px 140px;
+    z-index: 11; 
+    border-radius: 20px;
+    font-family: 'Tilt Warp';
+    font-size: 26px;
+    color: rgb(241, 199, 184);
+}
+main #project_container .projects2{
+    display: block;
+    justify-content: space-around;
+    margin: -313px 0px 0px 450px;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(104, 85, 48);
+    border: 5px solid rgb(81, 49, 49);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 6px 5px 3px rgb(182, 139, 108);
+    position: relative; 
+    z-index: 10; 
+}
+main #project_container .projects2 #img2{
+    position: absolute;
+    margin: 20px 0px 0px 26px;
+    height: 200px;
+    width: 350px; 
+    z-index: 5; 
+}
+main #project_container .projects2 #oneD{
+    position: absolute;
+    margin: 245px 0px 0px 140px;
+    z-index: 11; 
+    border-radius: 20px;
+    font-family: 'Tilt Warp';
+    font-size: 23px;
+    color: rgb(241, 199, 184);
+}
+#viewButton2{
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(228, 150, 108);
+    border: 5px solid rgb(66, 42, 33);
+    font-size: 22px;
+    text-decoration: none;
+    margin: 1125px 0px 0px 570px;
+    border-radius: 30px;
+    padding: 4px 22px 4px 22px;
+    font-family: 'Tilt Warp';
+    color: rgb(59, 32, 28);
+    transition: 0.3s;
+}
+main #project_container .projects3{
+    display: block;
+    justify-content: space-around;
+    margin: -313px 0px 0px 920px;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(104, 85, 48);
+    border: 5px solid rgb(81, 49, 49);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 6px 5px 3px rgb(182, 139, 108);
+    position: relative; 
+    z-index: 10; 
+}
+main #project_container .projects3 #img3{
+    position: absolute;
+    margin: 20px 0px 0px 26px;
+    height: 210px;
+    width: 350px; 
+    z-index: 5; 
+}
+main #project_container .projects3 #Beverage{
+    position: absolute;
+    margin: 245px 0px 0px 150px;
+    z-index: 11; 
+    border-radius: 20px;
+    font-family: 'Tilt Warp';
+    font-size: 29px;
+    color: rgb(241, 199, 184);
+}
+#viewButton3{
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(228, 150, 108);
+    border: 5px solid rgb(66, 42, 33);
+    font-size: 22px;
+    text-decoration: none;
+    margin: 1125px 0px 0px 1040px;
+    border-radius: 30px;
+    padding: 4px 22px 4px 22px;
+    font-family: 'Tilt Warp';
+    color: rgb(59, 32, 28);
+    transition: 0.3s;
+}
+main #project_container .projects4 {
+    display: inline-block;
+    justify-content: space-around;
+    margin: 60px 0px 0px -20px;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(104, 85, 48);
+    border: 5px solid rgb(81, 49, 49);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 6px 5px 3px rgb(182, 139, 108);
+    position: relative; 
+    z-index: 10; 
+}
+main #project_container .projects4 #img4{
+    position: absolute;
+    margin: 20px 0px 0px 26px;
+    height: 200px;
+    width: 350px; 
+    z-index: 5; 
+}
+#viewButton4{
+
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(228, 150, 108);
+    border: 5px solid rgb(66, 42, 33);
+    font-size: 22px;
+    text-decoration: none;
+    margin: 1490px 0px 0px 100px;
+    border-radius: 30px;
+    padding: 4px 22px 4px 22px;
+    font-family: 'Tilt Warp';
+    color: rgb(59, 32, 28);
+    transition: 0.3s;
+}
+#viewButton:hover, #viewButton2:hover, #viewButton3:hover, #viewButton4:hover{
+    transform:scale(1.1);
+}
+main #project_container .projects4 #tms{
+    position: absolute;
+    margin: 243px 0px 0px 140px;
+    z-index: 11; 
+    border-radius: 20px;
+    font-family: 'Tilt Warp';
+    font-size: 26px;
+    color: rgb(241, 199, 184);
+}
+footer #separator2{
+    position: absolute;
+    width: 1400px;
+    margin: 1600px 0px 0px 55px;
+    z-index: 9;
+}
+footer #contact_container{
+    position: absolute;
+    width: 900px;
+    height: 540px;
+    background-color: none;
+    z-index: 9;
+    top: 1760px;
+    margin: 0px 0px 0px 310px;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+footer #contact_container p{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin: 30px 0px 0px 340px;
+    font-family: 'Tilt Warp';
+    font-size: 40px;
+    z-index: 9;
+}
+footer #contact_container div{
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin: 120px 0px 0px 100px;
+    z-index: 9;
+
+}
+footer #contact_container div #first{
+    position: absolute;
+    display: inline;
+    font-size: 46px;
+    margin: 18px 0px 0px -30px;
+    padding-top: 10px;
+}
+footer #contact_container div #firstLabel{
+    font-size: 30px;
+    margin: 0px 0px 0px 50px;
+    padding-top: 0px;
+}
+footer #contact_container div #name{
+    font-size: 30px;
+    margin: 20px 0px 0px 50px;
+    padding-top: 10px;
+    border-radius: 15px;
+    width: 480px;
+    padding-left: 20px;
+    font-family: 'Comic Sans MS';
+    color: rgb(0, 0, 0);
+    background-color: rgb(227, 199, 179);
+    border: 7px solid rgb(121, 46, 46);
+}
+footer #contact_container div #second{
+    position: absolute;
+    display: block;
+    font-size: 46px;
+    margin: 23px 0px 0px -30px;
+    padding-top: 10px;
+}
+footer #contact_container div #secondLabel{
+    font-size: 30px;
+    margin: 0px 0px 0px 50px;
+    padding-top: 0px;
+}
+footer #contact_container div #pNumber{
+    font-size: 30px;
+    margin: 20px 0px 0px 123px;
+    padding-top: 10px;
+    border-radius: 15px;
+    width: 480px;
+    padding-left: 20px;
+    font-family: 'Comic Sans MS';
+    color: rgb(0, 0, 0);
+    background-color: rgb(227, 199, 179);
+    border: 7px solid rgb(121, 46, 46);
+}
+footer #contact_container div #third{
+    position: absolute;
+    display: block;
+    font-size: 46px;
+    margin: 43px 0px 0px -30px;
+    padding-top: 10px;
+}
+footer #contact_container div #thirdLabel{
+    font-size: 30px;
+    margin: 0px 0px 0px 50px;
+    padding-top: 0px;
+}
+footer #contact_container div #message{
+    font-size: 20px;
+    margin: 20px 0px 0px 86px;
+    border-radius: 15px;
+    width: 480px;
+    height: 100px;
+    padding-left: 20px;
+    font-family: 'Comic Sans MS';
+    color: rgb(0, 0, 0);
+    background-color: rgb(227, 199, 179);
+    border: 7px solid rgb(121, 46, 46);
+}
+footer #contact_container div #s{
+    font-size: 25px;
+    margin: 23px 0px 0px 256px;
+    border-radius: 55px;
+    width: 170px;
+    height: 60px;
+    font-family: 'Comic Sans MS';
+    color: white;
+    background-color: rgb(89, 63, 45);
+    border: 7px solid rgb(230, 206, 206);
+    transition: 0.2s;
+}
+footer #contact_container div #s:hover{
+    transform:scale(1.04);
+}

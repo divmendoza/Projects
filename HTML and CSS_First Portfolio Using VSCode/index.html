@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dave's First Task in CCIT102</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div id = "navbar">
+                <h2>CCIT102 First Activity</h2>
+                <ul>
+                    <a href = "#"><li class = "enum">Home</li></a>
+                    <a href = "#separator"><li class = "enum">Projects</li></a>
+                    <a href = "#separator2"><li class = "enum">Contact Me Section</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id = "imgContainer">
+            <div id = "mainContainer">
+                <img src = "Images/me.jpg">
+        </section>
+
+        <section id = "prelimHeading">
+            <p id = "greetings">Hello, I'm</p>
+            <h2>Dave Mendoza</h2>
+            <p id = "greetings">And I'm a future <p id = "animated">Full-Stack Developer</p></p>
+            <p id = "description">I'm an aspiring programmer with a passion for front-end development,
+                                 <br>specializing in translating design concepts into seamless and interactive
+                                 <br>web experiences using HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <!-- Section Separator -->
+        <img src = "Images/line.png"
+             id = "separator">
+
+        <section id = "project_container">
+            <h4>Accomplished Projects since 2024</h4>
+            
+            <div class="projects">
+                <img id = "img1" src="Images/coffeeshop.jpg">
+                <p id="coffee">Online Coffee Shop</p>
+            </div>
+            <div class="projects2">
+                <img id = "img2" src="Images/oneD.jpg">
+                <p id="oneD">One Direction Playlist</p>
+            </div>
+            <div class="projects3">
+                <img id = "img3" src="Images/sololearn.jpg">
+                <p id="Beverage">Beverage Shop</p>
+            </div>
+            <div class="projects4">
+                <img id = "img4" src="Images/tms.jpg">
+                <p id="tms">Batangas TMS</p>
+            </div>
+            
+            
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+            <a href="https://drive.google.com/file/d/1PUyz_USmKlDc2M-eZOJYPY7tXYrDHRGN/view?usp=drive_link" id="viewButton">View</a>
+            <a href="https://drive.google.com/file/d/1wz-YCkom2Vo10GtFW7grpTEA3fTyFb49/view?usp=drive_link" id="viewButton2">View</a>
+            <a href="https://drive.google.com/file/d/1NcQX9bEVGSUjtE905hb3bQ9GLiLa-giq/view?usp=drive_link" id="viewButton3">View</a>
+            <a href="https://drive.google.com/file/d/1z27rHkFKvIfpeYoPVdqXzxLGUFS5-Y04/view?usp=drive_link" id="viewButton4">View</a>
+            
+            <!-- Section Separator -->
+            <img src = "Images/line.png"
+                  id = "separator2">
+
+            <section id = "contact_container">
+
+            <p>Contact Me</p>
+            <div>
+                <i id = "first" class="fa-solid fa-envelope"></i>                
+                <label id = "firstLabel" for = "name">Send Email</label>
+                <input type = "text"
+                        id = "name"
+                        name = "NamePrompt"
+                        placeholder = "Enter your name">
+                        
+                <i id = "second"class="fa-brands fa-viber"></i>        
+                <label id = "secondLabel"for = "pNumber">Viber</label>
+                <input type = "text"
+                        id = "pNumber"
+                        name = "PnumberPrompt"
+                        placeholder = "Enter your email">
+
+                <i id = "third" class="fa-solid fa-message"></i>
+                <label id = "thirdLabel"for = "message">Message</label>
+                <input type = "text"
+                        id = "message"
+                        name = "MessagesPrompt"
+                        placeholder = "Enter your message here">
+                <form>
+                    <input type = "submit" 
+                           id = "s"
+                           onclick = "alert('Thank you for messaging.')">
+                </form>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

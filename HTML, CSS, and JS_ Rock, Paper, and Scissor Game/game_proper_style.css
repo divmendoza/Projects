@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+body {
+    display: flex;
+    position: relative;
+    background-color: #7a2bae; 
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+    overflow: hidden;
+    min-height: 100vh; 
+}
+#navi{
+    display: flex;
+    height: 79px;
+    background-color: #350c62;
+    z-index: 12;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 2px 3px 2px rgb(0, 0, 0);
+    border-radius: 0px 0px 10px 10px;
+}
+i{
+    color: rgb(185, 99, 251);
+    font-size: 50px;
+    margin: 5px 0px 0px 25px;
+    position: absolute;
+    text-shadow: 3px 3px 6px rgb(42, 19, 89);
+}
+#ulist{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;  
+    justify-content: flex-end;
+    right: 20px;
+    li{
+        display: flex;
+        font-family: 'Spicy Rice';
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        transition: 0.4s;
+        padding: 2px 30px 0px 20px;
+
+    }
+    a{
+        text-decoration: none;
+
+    }
+}
+#ulist a li:hover{
+    color: #ffa800;
+}
+#backG{
+    position: absolute;
+    display: flex;
+    top: 51px;
+    right: 0px;
+    bottom: -40px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    #Gback{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.84;
+    }
+}
+#round{
+    display: inline;
+    position: absolute;
+    justify-content: flex-start;
+    font-family: 'Spicy Rice';
+    font-size: 170px;
+    color: #350c62;
+    top: 350px;
+    padding-left: 140px;
+    margin: -70px 0px 0px 580px;   
+}
+#container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    z-index: 4;
+
+    #border1{
+        position: fixed;
+        width: 1300px;
+        height: 700px;
+        justify-content: flex-start;
+        margin: -410px 0px 0px -180px;
+        overflow: hidden;
+        padding-right: 20px;
+
+    }
+    #border2{
+        display: flex;
+        position: fixed;
+        width: 1300px;
+        height: 700px;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding: 0px 10px 10px -560px;
+        top: 37px;
+        left: 220px;
+        right: 830px;
+        z-index: 13;
+    }
+    #score{
+        top: -338px;
+        left: 133px;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-size: 70px;
+        font-family: 'Spicy Rice';
+    }
+    #score2{
+        top: 134px;
+        left: 1355px;
+        position: absolute;
+        color: rgb(50, 0, 119);
+        font-size: 70px;
+        font-family: 'Spicy Rice';
+        z-index: 15;
+    }
+}
+#container2{
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 240px;
+    z-index: 11;
+    margin-top: 100px;
+
+    #Rb, #Pb, #Sb{
+        position: absolute;
+        z-index: 112;
+        display: block;
+        margin: 470px 0px 0px 561px;
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+        box-shadow: 3px 3px 2px rgb(76, 55, 94);
+    }
+    #Pb{
+        margin: 470px 0px 0px 710px;
+    }
+    #Sb{
+        margin: 470px 0px 0px 860px;
+    }
+
+    #Rb:hover, #Pb:hover, #Sb:hover{
+        transform: translate(0px, -10px);
+    }
+}
+#img1{
+    width: 1500px;
+    height: 750px;
+    display: inline;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -30px;
+    animation: you 1s linear infinite;
+}
+@keyframes you {
+    0%, 100%{
+        transform: translate(0px, 0px);
+    }50%{
+        transform: translate(30px, 0px);
+    }
+}
+#img2{
+    width: 1400px;
+    height: 800px;
+    display: inline;
+    position: absolute;
+    margin-top: -150px;
+    left: 190px;
+    animation: comp 1s linear infinite;
+}
+@keyframes comp {
+    0%, 100%{
+        transform: translate(0px, 0px);
+    }50%{
+        transform: translate(-30px, 0px);
+    }
+}

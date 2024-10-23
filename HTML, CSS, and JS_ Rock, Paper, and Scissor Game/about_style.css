@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Playwrite+DE+Grund:wght@100..400&family=Staatliches&display=swap');
+
+body {
+    display: flex;
+    position: relative;
+    background-color: #7a2bae; 
+    margin: 0px;
+    padding: 0;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+body::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/Project.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    opacity: 1;
+    z-index: -1;
+}
+#navi{
+    display: flex;
+    height: 79px;
+    background-color: #350c62;
+    z-index: 4;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 2px 3px 2px rgb(0, 0, 0);
+    border-radius: 0px 0px 10px 10px;
+}
+i{
+    color: rgb(185, 99, 251);
+    font-size: 50px;
+    margin: 5px 0px 0px 25px;
+    position: absolute;
+    text-shadow: 3px 3px 6px rgb(42, 19, 89);
+}
+#ulist{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;  
+    justify-content: flex-end;
+    right: 20px;
+    li{
+        display: flex;
+        font-family: 'Spicy Rice';
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        transition: 0.4s;
+        padding: 2px 30px 0px 20px;
+
+    }
+    a{
+        text-decoration: none;
+
+    }
+}
+#ulist a li:hover{
+    color: #ffa800;
+}
+#containers{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+#main_paper{
+    position: absolute;
+    display: flex;
+    width: 85%;
+    height: 725px;
+    top: 5%;
+    left: 7%;
+}
+#message, b{
+    font-size: 23px;
+    font-family: 'Staatliches';
+    text-shadow: 1px 1px 2px rgb(252, 191, 191);
+    line-height: 1.4;
+    position: absolute;
+    display: flex;
+    color: rgb(108, 29, 169);
+    align-self: center;
+    text-align: center;
+    top: 233px;
+    padding-left: 12px;
+}
+#left{
+    position: absolute;
+    display: flex;
+    width: 95%;
+    height: 115%;
+    top: -12%;
+    left: 5%;
+    animation: up 3s linear infinite;
+}
+#right{
+    position: absolute;
+    display: flex;
+    width: 95%;
+    height: 115%;
+    top: -13.3%;
+    left: 1%;
+    animation: up 3s linear infinite;
+}
+@keyframes up {
+    0%, 100%{
+        transform: translate(0px, 0px);
+    }50%{
+        transform: translate(0px, -25px);
+    }
+}

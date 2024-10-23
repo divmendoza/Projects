@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Proper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" referrerpolicy="no-referrer"/>    
+    <link rel="stylesheet" href="game_proper_style.css"/>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="Sounds/game_proper.mp3" type="audio/mp3">
+      </audio>
+    <nav id = "navi">
+        <i class="fa-solid fa-gamepad"></i>
+        <ul id = "ulist">
+            <a href = "home.html"><li>Home</li></a>
+            <a href = "about.html"><li>About</li></a>
+            <a href = "developers.html"><li>Developers</li></a>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div id = "backG">
+        <img id = "Gback" src = "Images/background.png">
+    </div>
+    <p id = "round">1</p>
+
+    <div id = "container">
+        <img id = "border1" src = "Images/oppScore.png">
+        <p id = "score">0</p>
+        <img id = "border2" src = "Images/youScore.png">
+        <p id = "score2">0</p>
+    </div>
+    <div id = "container2">
+
+
+
+
+        <img id = "img1" src = "Images/youR.png">
+        <img id = "img2" src = "Images/comS.png">
+
+
+
+
+
+
+
+        
+        <img id = "Rb" src = "Images/greenR.png" onclick = 'process(0)'>
+        <img id = "Pb" src = "Images/redP.png" onclick = 'process(1)'>
+        <img id = "Sb" src = "Images/limeS.png" onclick = 'process(2)'>
+
+        <script src = "script.js"></script>
+    </div>
+
+</body>
+</html>

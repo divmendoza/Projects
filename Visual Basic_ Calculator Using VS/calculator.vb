@@ -11,7 +11,7 @@ Public Class Form1
         If (TxtBox.Text.Equals("0")) Then
             TxtBox.Text = "0"
         Else
-            TxtBox.Text = "0"
+            TxtBox.Text += "0"
         End If
     End Sub
 

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Playwrite+DE+Grund:wght@100..400&family=Staatliches&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* NAVIGATION BAR */
+
+#nav_container{
+    position: relative;
+    display: inline-flex;
+    background-color: #eaaa3c;
+    height: 728px;
+    width: 200px;
+    z-index: 999
+}
+#blue{
+    display: flex;
+    position: absolute;
+    top: 90px;
+    height: 100%;
+    width: 350px;
+    background-color: blue;
+    z-index: 1000;
+}
+#logo{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#logo_img{
+    z-index: 1002;
+    position: relative;
+    top: -8px;
+}
+#item_container{
+    position: absolute;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: #1e154e;
+}
+#lists, #lists a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:first baseline;
+    align-items: center;
+    color: white;
+    font-family: 'Passion One';
+    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 1001;
+}
+.contents {
+    display: flex;
+    padding: 35px 0px 35px 0px;
+    transition: 3s;
+}
+#first{
+    padding-top: 70px;
+}
+#last{
+    padding-top: 140px;
+}
+#item_container #lists li a:hover{
+    color: #eaaa3c;
+}
+
+
+/* About Image */
+
+#meUI{
+    display: inline-flex;
+    position: absolute;
+    width: 36%;
+    top: 240px;
+    left: 350px;
+}
+#devImage{
+    left: -18.1px;
+    position: absolute;
+    display: inline-flex;
+    background-image: green;
+    width: 100%;
+    height: 100%;
+}

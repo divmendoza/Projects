@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Playwrite+DE+Grund:wght@100..400&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=New+Amsterdam&family=Passion+One:wght@400;700;900&family=Playwrite+DE+Grund:wght@100..400&family=Staatliches&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* NAVIGATION BAR */
+
+#nav_container{
+    position: relative;
+    display: inline-flex;
+    background-color: #eaaa3c;
+    height: 728px;
+    width: 200px;
+    z-index: 999
+}
+#blue{
+    display: flex;
+    position: absolute;
+    top: 90px;
+    height: 100%;
+    width: 350px;
+    background-color: blue;
+    z-index: 1000;
+}
+#logo{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#logo_img{
+    z-index: 1002;
+    position: relative;
+    top: -8px;
+}
+#item_container{
+    position: absolute;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: #1e154e;
+}
+#lists, #lists a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: baseline;
+    align-items: center;
+    color: white;
+    font-family: 'Passion One';
+    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 1001;
+}
+.contents {
+    display: flex;
+    padding: 35px 0px 35px 0px;
+    transition: 3s;
+}
+#first{
+    padding-top: 70px;
+}
+#last{
+    padding-top: 140px;
+}
+#item_container #lists li a:hover{
+    color: #eaaa3c;
+}
+
+/* FORM */
+
+#mainContainer{
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(54, 54, 66);
+    width: 100%;
+    height: 100%;
+    height: 728px;
+    color: rgb(227, 227, 240);
+}
+#forms{
+    position: absolute;
+    background-color: rgb(32, 32, 5);
+    width: 25%;
+    height: 85%;
+    padding: 32px; 
+    top: 8%;
+    left: 3%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#forms #addHeading{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Black Han Sans';
+}
+#forms img{
+    width: 95%;
+    height: 30%;
+    margin: 12px 0px 5px 2%;
+}
+#forms .fields, #forms label{
+    color: rgb(185, 165, 165);
+    font-family: 'Passion One';
+    font-size: 170%;
+    border-radius: 6px;
+    margin-bottom: 3%;
+}
+#forms .fields{
+    color:#1e154e;
+}
+#forms #submit{
+    color: rgb(255, 255, 255);
+    background-color: #665b50;
+    font-family: 'Passion One';
+    font-size: 170%;
+    width: 35%;
+    height: 7.5%;
+    border-radius: 6px;
+    margin-top: 2%;
+    display: flex;
+    transition: 0.4s;
+}
+#forms #submit:hover{
+    color: rgb(243, 189, 28);
+    transform: scale(1.05);
+}
+
+/* TABLE */
+
+#tables{
+    position: absolute;
+    background-color: rgb(78, 72, 66);
+    width: 52.7%;
+    height: 85%;
+    padding: 32px; 
+    top: 8%;
+    left: 31%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: normal;
+}
+#tables table thead tr th{
+    width: 10%;
+    font-family: 'Passion One';
+    font-size: 190%;
+    background-color: rgb(65, 120, 2);
+    padding: 3px 0px 3px 0px;
+}
+#tables table thead tr #mobile{
+    font-family: 'Passion One';
+    font-size: 190%;
+    width: 10%;
+}
+#tables table thead tr #action{
+    font-family: 'Passion One';
+    font-size: 190%;
+    width: 11%;
+}
+#tables table #contents td{
+    width: 10%;
+    height: 100%;
+    background-color: rgb(48, 48, 26);
+    font-family: 'Passion One';
+    font-size: 170%;
+    text-align: center;
+    padding: 10px 0px;
+}
+#tables table #contents .customDelete{
+    background-color: rgb(161, 16, 16);
+    width: 27%;
+    height: 35px;
+    border-radius: 14px;
+    font-family: 'Passion One';
+    font-size: 80%;
+    color: white;
+    display: inline;
+}
+#tables table #contents .customUpd{
+    position: relative;
+    background-color: rgb(113, 108, 48);
+    width: 27%;
+    height: 35px;
+    border-radius: 14px;
+    font-family: 'Passion One';
+    font-size: 80%;
+    color: white;
+    display: inline;
+    margin: 7px;
+}

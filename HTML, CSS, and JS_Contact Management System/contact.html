@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Contact Management System</title>
+    <link rel="stylesheet" href="contact_styles.css">
+</head>
+<body onload = "loadData()">
+
+    <!-- Navigation Bar -->
+    <nav id = "nav_container">
+        <div id = "logo">
+            <img id = "logo_img" src = "Images/Logo.png">
+        </div>
+        <div id = "blue"></div>
+        <div id = "item_container">
+                <ul id = "lists">
+                   <li class = "contents" id = "first"><a href = "home.html">Home</a></li> 
+                   <li class = "contents"><a href = "about.html">About</a></li> 
+                   <li class = "contents"><a href = "#">Contacts</a></li> 
+                   <li class = "contents"><a href = "developers.html">Developer</a></li> 
+                   <li class="contents" id="last" onclick = "exitFunc()"><a href="#" id="exitBtn">Exit</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <div id = "mainContainer">
+        <!--Contact Proper (Inputs)-->
+        <form id = "forms">
+            <h2 id = "addHeading">ADD CONTACT</h2>
+            <img src = "Images/Person.png">
+            <label for = "name">Name: </label>
+            <input type = "text" class = "fields" id = "name" placeholder= "Enter your name">
+
+            <label for = "surname">Surname: </label>
+            <input type = "text" class = "fields" id = "surname" placeholder= "Enter your surname">
+
+            
+            <label for = "age">Age: </label>
+            <input type = "text" class = "fields" id = "age" placeholder= "Enter your age">
+
+            <label for = "number">Mobile Number: </label>
+            <input type = "text" class = "fields" id = "number" placeholder= "Enter your mobile number">
+
+            <input type = "submit" id = "submit" value = "Add">
+        </form>
+
+        <!--Contact Proper (Tables)-->
+        <div id = "tables">
+            <table>
+                <thead>
+                    <tr>
+                        <th style = "width: 10.98%;">Name</th>
+                        <th style = "width: 5.7%;">Surname</th>
+                        <th style = "width: 10.9%;">Age</th>
+                        <th id = "mobile">Mobile No.</th>
+                        <th id = "action">Action</th>
+                    </tr>
+                </thead>
+                <tbody id = "contents">
+                    <!--Data-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
